@@ -1,0 +1,72 @@
+/* Global styles */
+
+html {
+  font-family: "Vollkorn", serif;
+  color: #0a3641;
+}
+
+a {
+  color: #e77431;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navigation bar */
+
+header {
+  background-color: #9bc3bb;
+  min-height: 67px;
+}
+
+.logo {
+  font-size: 3rem;
+  padding: 0;
+  float: left;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0;
+  min-height: 67px;
+}
+
+li {
+  display: inline;
+}
+
+nav {
+  max-width: 1366px;
+  margin: auto;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #0a3641;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.nav-divider {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-left,
+.nav-right {
+  align-self: center;
+}
