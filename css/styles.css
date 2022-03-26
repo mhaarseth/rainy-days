@@ -13,6 +13,12 @@ body {
   margin: 0;
 }
 
+footer {
+  background-color: #9bc3bb;
+  text-align: center;
+  padding: 20px;
+}
+
 /* Navigation bar */
 
 header {
@@ -24,13 +30,14 @@ nav {
   grid-template-columns: auto 1fr auto;
 }
 
-.nav-logo {
+.nav-logo,
+.nav-left,
+.nav-right {
   align-self: center;
 }
 
 .nav-logo a {
   font-size: 2.3rem;
-  padding: 0;
   margin: 0;
   font-weight: bold;
 }
@@ -44,7 +51,7 @@ li {
 }
 
 nav {
-  max-width: 1366px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -65,4 +72,44 @@ nav a:hover {
 
 .nav-divider {
   font-size: 1.3rem;
+}
+
+/* Hero section */
+
+.hero-section {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  position: relative;
+}
+
+.hero-section-text {
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  left: 50px;
+}
+
+.hero-section-text h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 100px 0 25px 0;
+}
+
+.hero-section-text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #e77431;
+  color: #efefef;
+  font-weight: bold;
+  padding: 20px;
+  display: inline-block;
+  min-width: 163px;
+  font-size: 1.1rem;
+  margin: 5px;
+  text-align: center;
 }
