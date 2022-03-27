@@ -20,6 +20,13 @@ header {
   background-color: #9bc3bb;
 }
 
+.nav-icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+
 nav {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
@@ -340,6 +347,13 @@ footer p {
 
   .nav-icons {
     padding: 10px;
+  }
+
+  .nav-icons nav {
+    background-color: #9bc3bb;
+    position: absolute;
+    top: 46px;
+    right: -10px;
   }
 }
 
