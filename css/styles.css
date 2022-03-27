@@ -313,6 +313,15 @@ footer p {
   .nav-right {
     display: none;
   }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav-icons {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 625px) {
