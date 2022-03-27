@@ -22,12 +22,16 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto auto;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .nav-logo,
 .nav-left,
-.nav-right {
+.nav-right,
+.nav-icons {
   align-self: center;
 }
 
@@ -45,17 +49,15 @@ li {
   display: inline;
 }
 
-nav {
-  max-width: 100%;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 nav a {
-  margin: 0 10px 0 10px;
+  margin-right: 10px;
   text-decoration: none;
   font-size: 1.2rem;
   color: #0a3641;
+}
+
+.nav-icons {
+  margin-left: 15px;
 }
 
 nav a:hover {
@@ -302,13 +304,7 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 804px) {
-  #hamburger-menu {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 803px) {
+@media only screen and (max-width: 838px) {
   .nav-logo a {
     font-size: 1.2rem;
   }
@@ -320,15 +316,6 @@ footer p {
 }
 
 @media only screen and (max-width: 625px) {
-  .nav-logo a {
-    font-size: 1.2rem;
-  }
-
-  .nav-left,
-  .nav-right {
-    display: none;
-  }
-
   .hero-section-text h1 {
     font-size: 2rem;
   }
