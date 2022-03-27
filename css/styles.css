@@ -302,6 +302,23 @@ footer p {
   }
 }
 
+@media only screen and (min-width: 804px) {
+  #hamburger-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 803px) {
+  .nav-logo a {
+    font-size: 1.2rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 625px) {
   .nav-logo a {
     font-size: 1.2rem;
