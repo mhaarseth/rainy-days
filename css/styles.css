@@ -45,7 +45,8 @@ nav {
   text-decoration: none;
 }
 
-li {
+.nav-left li,
+.nav-right li {
   display: inline;
 }
 
@@ -80,6 +81,18 @@ nav a:hover {
   font-size: 1rem;
   margin-left: 7px;
   padding: 5px;
+}
+
+.nav-icons nav {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 /* Hero section */
@@ -301,6 +314,12 @@ footer p {
 
   .company-information {
     max-width: 800px;
+  }
+}
+
+@media only screen and (min-width: 839px) {
+  .navburger {
+    display: none;
   }
 }
 
