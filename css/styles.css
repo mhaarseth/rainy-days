@@ -14,12 +14,6 @@ body {
   margin: 0;
 }
 
-footer {
-  background-color: #9bc3bb;
-  text-align: center;
-  padding: 20px;
-}
-
 /* Navigation bar */
 
 header {
@@ -52,8 +46,9 @@ li {
 }
 
 nav {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 nav a {
@@ -98,7 +93,7 @@ nav a:hover {
 }
 
 .hero-section-text {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   text-align: left;
 }
@@ -259,4 +254,23 @@ nav a:hover {
   margin-bottom: 50px;
   margin-right: 15px;
   font-size: 1.1rem;
+}
+
+/* Footer */
+
+footer {
+  max-width: 100%;
+  background-color: #9bc3bb;
+  text-align: left;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer img {
+  max-width: 100px;
+}
+
+footer p {
+  justify-self: right;
 }
