@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="At Rainydays, we sell durable yet affordable rainjackets">
+    <meta name="description" content="At Rainydays, we sell durable yet affordable rainjackets.">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,14 @@
     <header>
       <nav>
         <div class="nav-logo">
-          <a href="index.html">RAINYDAYS</a>
+          <a href="index.html">Rainydays</a>
         </div>
         <div class="nav-left">
           <ul>
             <li><a href="mens.html">Men's</a></li>
             <li><a href="womens.html">Women's</a></li>
             <li class="nav-divider"> | </li>
-            <li><input type="text" placeholder="Search"></li>
+            <li><input type="text" placeholder="Search" id="search"></li>
           </ul>
         </div>
         <div class="nav-right">
@@ -34,16 +34,16 @@
           </ul>
         </div>
         <div class="nav-icons">
-            <a href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
             <a href="Cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
             <label for="hamburger-menu" class="navburger"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
             <nav>
               <ul>
-                <li><a href="#">Men's</a></li>
-                <li><a href="#">Women's</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="mens.html">Men's</a></li>
+                <li><a href="womens.html">Women's</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
@@ -61,63 +61,95 @@
       </div>
       </section>
       <section class="featured-products">
-        <div class="featured-product-card card1">
-          <img src="images/jacket1.png" alt="Product image" class="featured-product-card-img">
-          <div class="featured-product-card-copy">
-            <h3>That One Jacket</h3>
-            <div class="dots">
-              <span class="yellow-dot"></span>
-              <span class="red-dot"></span>
-              <span class="blue-dot"></span>
-              <span class="green-dot"></span>
+        <h2>Our most popular jackets</h2>
+        <section class="product-box-left">
+          <div class="featured-product">
+            <div class="featured-product-card-img">
+              <img src="images/jacket1.jpg" alt="Product image">
             </div>
-            <p>500kr</p>
-            <a href="#" class="view-button">View</a>
-          </div>
-        </div>
-        <div class="featured-product-card card2">
-          <img src="images/jacket2.png" alt="Product image" class="featured-product-card-img">
-          <div class="featured-product-card-copy">
-            <h3>Another Jacket</h3>
-            <div class="dots">
-              <span class="yellow-dot"></span>
-              <span class="red-dot"></span>
-              <span class="blue-dot"></span>
-              <span class="green-dot"></span>
+            <div class="featured-product-card-copy">
+              <h3>That One Jacket</h3>
+              <div class="dots">
+                <span class="yellow-dot"></span>
+                <span class="red-dot"></span>
+                <span class="blue-dot"></span>
+              </div>
+              <p>500kr</p>
+              <a href="#" class="view-button">View</a>
             </div>
-            <p>500kr</p>
-            <a href="#" class="view-button">View</a>
           </div>
-        </div>
-        <div class="featured-product-card card3">
-          <img src="images/jacket3.png" alt="Product image" class="featured-product-card-img">
-          <div class="featured-product-card-copy">
-            <h3>Maybe This Jacket</h3>
-            <div class="dots">
-              <span class="yellow-dot"></span>
-              <span class="red-dot"></span>
-              <span class="blue-dot"></span>
-              <span class="green-dot"></span>
+          <div class="featured-product">
+            <div class="featured-product-card-img">
+              <img src="images/jacket2.jpg" alt="Product image">
             </div>
-            <p>500kr</p>
-            <a href="#" class="view-button">View</a>
+            <div class="featured-product-card-copy">
+              <h3>Another Jacket</h3>
+              <div class="dots">
+                <span class="yellow-dot"></span>
+                <span class="green-dot"></span>
+              </div>
+              <p>500kr</p>
+              <a href="#" class="view-button">View</a>
+            </div>
           </div>
-        </div>
         </section>
+        <section class="product-box-right">
+          <div class="featured-product"> 
+            <div class="featured-product-card-img">
+              <img src="images/jacket3.jpg" alt="Product image">
+            </div>
+            <div class="featured-product-card-copy">
+              <h3>Yet Another Jacket</h3>
+              <div class="dots">
+                <span class="yellow-dot"></span>
+              </div>
+              <p>500kr</p>
+              <a href="#" class="view-button">View</a>
+            </div>
+          </div>
+          <div class="featured-product">
+            <div class="featured-product-card-img">
+              <img src="images/jacket4.jpg" alt="Product image">
+            </div>
+            <div class="featured-product-card-copy">
+              <h3>Maybe this Jacket</h3>
+              <div class="dots">
+                <span class="yellow-dot"></span>
+                <span class="red-dot"></span>
+                <span class="blue-dot"></span>
+                <span class="green-dot"></span>
+              </div>
+              <p>500kr</p>
+              <a href="#" class="view-button">View</a>
+            </div>
+          </div>
+        </section> 
+      </section>
       <section class="company-information">
-
-        <img src="images/red-jacket.jpg" alt="Human being in red jacket">
-        <div class="company-information-copy">
           <h2>Who we are, and what we're all about</h2>
-          <p>At rainydays, we've seen our share of rainy days. And we know what it
-          takes to stay dry. Like you, we are adventurers, equally as frustrated at the beautiful hikes and outings being marred by bad clothing.</p>
-          <p>If you have questions about us, our brand or our clothing, don't be afraid to <a href="contact.html">get in touch</a>.</p>
-        </div>
+          <section class="company-information-left">
+            <div class="company-information-img">
+              <img src="images/red-jacket.jpg" alt="Human being in red rain jacket">
+            </div>
+            <div class="company-information-copy">
+              <p>At rainydays, we've seen our share of - well - rainy days. And we know what it
+            takes to stay dry. Like you, we are adventurers, equally as frustrated at the beautiful hikes and outings being marred by bad clothing.</p>
+            </div>
+          </section>
+          <section class="company-information-right">
+            <div class="company-information-img">
+              <img src="images/red-jacket.jpg" alt="Human being in black rain jacket">
+            </div>
+            <div class="company-information-copy">
+              <p>If you have questions about us, our brand or our clothing, don't be afraid to <a href="contact.html">get in touch</a>.</p>
+            </div>
+            
+          </section>
       </section>
     </main>
     <footer>
       <img src="images/brand-logo.png" alt="Brand logo">
-      <p>Copyright &copy;</p>
+      <p>Copyright &copy; 2022</p>
     </footer>
   </body>
 </html>
