@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-form {
+.contact form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -40,6 +40,6 @@ textarea {
   margin-top: 20px;
 }
 
-input {
+.contact form input {
   margin-bottom: 20px;
 }

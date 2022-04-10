@@ -1,5 +1,8 @@
 @import "about.css";
 @import "contact.css";
+@import "products.css";
+@import "jacket.css";
+@import "cart.css";
 
 /* Global styles */
 
@@ -335,6 +338,7 @@ footer {
   padding: 20px;
   display: grid;
   grid-template-columns: auto auto;
+  margin-top: 50px;
 }
 
 footer img {

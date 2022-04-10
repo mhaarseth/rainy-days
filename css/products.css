@@ -1,0 +1,77 @@
+.jackets-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.jackets-main h1 {
+  width: 100%;
+  text-align: center;
+  margin: 50px auto 20px auto;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.product-jacket {
+  width: 300px;
+  height: 500px;
+  margin: auto;
+}
+
+.jackets-box-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+}
+
+.jackets-box-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+}
+
+.jackets-card-img {
+  max-width: 300px;
+  height: 75%;
+  display: flex;
+}
+
+.jackets-card-img img {
+  max-height: 100%;
+  max-width: 250px;
+  margin: auto;
+}
+
+.jackets-card-copy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 250px;
+  margin: auto;
+}
+
+.jackets-card-copy p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.jackets-card-copy h3 {
+  margin-top: 15px;
+}
+
+.view-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #e77431;
+  color: #efefef;
+  align-self: center;
+  justify-self: end;
+  padding: 10px 15px;
+  margin-top: 0;
+}
