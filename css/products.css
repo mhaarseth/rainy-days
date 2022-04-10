@@ -21,14 +21,14 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .jackets-box-right {
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .jackets-card-img {
