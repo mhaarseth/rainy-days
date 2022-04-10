@@ -8,21 +8,21 @@
   max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
+  gap: 20px;
 }
 
 .about-left {
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  flex-direction: column;
   justify-items: center;
+  margin: 0 auto;
 }
 
 .about-right {
   max-width: 600px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-items: center;
   margin: 0 auto;
 }
@@ -30,7 +30,7 @@
 .about-copy-who,
 .about-copy-what,
 .about-copy-why {
-  max-width: 500px;
+  max-width: 300px;
   width: 100%;
   margin: 20px 50px;
 }
@@ -39,8 +39,7 @@
   margin: 0;
 }
 
-.about-image-right,
-.about-image-left {
+.about-image {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -48,5 +47,5 @@
 }
 
 .about-right img {
-  max-width: 290px;
+  width: 100%;
 }

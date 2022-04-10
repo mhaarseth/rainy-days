@@ -3,8 +3,7 @@
 @import "products.css";
 @import "jacket.css";
 @import "cart.css";
-
-/* Global styles */
+@import "index.css";
 
 html {
   font-family: "Vollkorn", serif;
@@ -110,123 +109,39 @@ nav a:hover {
   display: block;
 }
 
-/* Hero section */
+/* Forms */
 
-.hero-section {
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  min-height: 90vh;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+  border-radius: 5px;
+  border-color: #9bc3bb;
 }
 
-.hero-section-text {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+#message {
+  border-radius: 5px;
+  border-color: #9bc3bb;
 }
 
-.hero-section-text h1 {
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 150px 0 25px 0;
-  color: #efefef;
-  line-height: 1.6;
-}
-
-h1 span {
-  background-color: #0a3641;
-}
-
-.hero-section-text a {
-  text-decoration: none;
+input[type="submit"] {
   text-transform: uppercase;
   background-color: #e77431;
-  color: #efefef;
-  font-weight: bold;
-  padding: 20px;
-  display: inline-block;
-  min-width: 163px;
-  font-size: 1.1rem;
-  margin: 5px;
-  text-align: center;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
 }
 
-/* Featured products */
-
-.featured-products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.featured-products h2 {
-  width: 100%;
-  text-align: center;
-  margin: 50px auto 20px auto;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.product-box-left {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
-}
-
-.product-box-right {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
-}
-
-.featured-product {
-  width: 300px;
-  height: 500px;
-  margin: auto;
-}
-
-.featured-product-card-img {
-  max-width: 300px;
-  height: 75%;
-  display: flex;
-}
-
-.featured-product-card-img img {
-  max-height: 100%;
-  max-width: 250px;
-  margin: auto;
-}
-
-.featured-product-card-copy {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
-  max-width: 250px;
-  margin: auto;
-}
-
-.featured-product-card-copy p {
-  font-size: 1.1rem;
-  margin-top: 0;
-}
-
-.featured-product-card-copy h3 {
-  margin-top: 15px;
-}
+/* Colored dots and buttons */
 
 .view-button {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #e77431;
-  color: #efefef;
+  color: black;
   align-self: center;
   justify-self: end;
   padding: 10px 15px;
@@ -238,95 +153,27 @@ h1 span {
   justify-self: right;
 }
 
-.yellow-dot {
+.dot {
   height: 20px;
   width: 20px;
-  background-color: yellow;
   border-radius: 50%;
   display: inline-block;
+}
+
+.yellow-dot {
+  background-color: yellow;
 }
 
 .red-dot {
-  height: 20px;
-  width: 20px;
   background-color: red;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .blue-dot {
-  height: 20px;
-  width: 20px;
   background-color: blue;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .green-dot {
-  height: 20px;
-  width: 20px;
   background-color: green;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/* Company information */
-
-.company-information {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.company-information h2 {
-  margin-top: 100px;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.company-information-left {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.company-information-right {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.company-information-img {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.company-information-img img {
-  width: 250px;
-}
-
-.company-information-copy {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.company-information-left p {
-  width: 250px;
-}
-
-.company-information-right p {
-  width: 250px;
 }
 
 /* Footer */
