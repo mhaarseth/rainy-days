@@ -1,6 +1,7 @@
 .contact {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 81px auto 0 auto;
+  min-height: 76vh;
 }
 
 .contact h1 {
@@ -8,36 +9,70 @@
 }
 
 .contact form {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
+}
+
+.contact-name-input,
+.email-input,
+.subject-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.full-name-error,
+.email-error,
+.subject-option-error {
+  color: red;
+  display: none;
+}
+
+.message-error {
+  width: 600px;
+  margin-top: 30px;
+  text-align: right;
+  color: red;
+  visibility: hidden;
+}
+
+.success-message-container {
+  margin-top: 30px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: justify;
+  visibility: hidden;
+  color: #0a3641;
+  font-size: 2rem;
 }
 
 .contact-top {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  width: 100%;
+  width: 600px;
 }
 
 .contact-bottom {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  width: 600px;
   justify-items: center;
   align-items: center;
-  width: 100%;
 }
 
 textarea {
   height: 200px;
   width: 100%;
-  margin-top: 20px;
 }
 
 .contact-cta-button {
-  width: 50px;
   margin-top: 20px;
+  width: auto;
+  padding: 10px;
 }
 
 .contact form input {

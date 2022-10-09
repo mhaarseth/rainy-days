@@ -1,6 +1,6 @@
 .cart-main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 81px auto 0 auto;
 }
 
 .cart-main h1 {
@@ -50,7 +50,26 @@
   width: 300px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 15px;
+}
+
+.line-container {
+  display: flex;
+  width: 141px;
+  justify-content: space-between;
+}
+
+.validation-dot {
+  background-color: red;
+  visibility: hidden;
+}
+
+.delivery-container {
+  width: 190px;
+}
+
+.expiry-date-container {
+  width: 170px;
 }
 
 .cart-right {
@@ -114,4 +133,26 @@
 .order-summary .cart-summary-line {
   width: 300px;
   margin: 0;
+}
+
+.order-failure {
+  display: flex;
+  color: red;
+  margin-top: 15px;
+  visibility: hidden;
+  font-size: 0.9rem;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+.order-success {
+  margin-top: 40px;
+  display: flex;
+  width: 300px;
+  display: none;
+}
+
+.order-cta-button {
+  width: auto;
+  padding: 10px;
 }

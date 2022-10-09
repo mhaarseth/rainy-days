@@ -1,3 +1,8 @@
+.jacket-main {
+  max-width: 1200px;
+  margin: 81px auto 0 auto;
+}
+
 .jacket-main h1 {
   text-align: center;
 }

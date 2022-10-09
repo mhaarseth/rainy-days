@@ -16,23 +16,7 @@
       src="https://kit.fontawesome.com/1eb31d1de3.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Hotjar Tracking Code for https://dreamy-sammet-d62ddc.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3162222, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
 
     <title>Rainydays - Cart and checkout</title>
   </head>
@@ -44,10 +28,9 @@
         </div>
         <div class="nav-left">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="mens.html">Men's</a></li>
             <li><a href="womens.html">Women's</a></li>
-            <li class="nav-divider">|</li>
-            <li><input type="text" placeholder="Search" id="search" /></li>
           </ul>
         </div>
         <div class="nav-right">
@@ -55,6 +38,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="nav-divider">|</li>
+            <li><input type="text" placeholder="Search" id="search" /></li>
           </ul>
         </div>
         <div class="nav-icons">
@@ -77,103 +61,149 @@
       </nav>
     </header>
     <main class="cart-main">
+      <a href onclick="javascript:history.back()" class="back-button"
+        >&#x2190; back</a
+      >
       <h1>Cart & Checkout</h1>
       <section class="cart">
         <div class="cart-left">
-          <form action="submit.php" method="GET">
+          <form id="order-form" novalidate>
             <div class="cart-personal-info">
               <h2>Personal information</h2>
-              <label for="first-name">First name: </label>
+              <div class="line-container">
+                <label for="first-name">First name: </label>
+                <span class="dot validation-dot first-name-error"></span>
+              </div>
               <input
                 type="text"
                 name="First name"
                 id="first-name"
-                placeholder="First name"
+                placeholder="Min. 1 character"
               />
-              <label for="last-name">Last name: </label>
+              <div class="line-container">
+                <label for="last-name">Last name: </label>
+                <span class="dot validation-dot last-name-error"></span>
+              </div>
               <input
                 type="text"
                 name="Last name"
                 id="last-name"
-                placeholder="Last name"
+                placeholder="Min. 1 character"
               />
-              <label for="address">Address:</label>
+              <div class="line-container">
+                <label for="address">Address:</label>
+                <span class="dot validation-dot address-error"></span>
+              </div>
               <input
                 type="text"
                 name="street-name"
                 id="street-name"
-                placeholder="Street name"
+                placeholder="Min. 5 characters"
               />
-              <label for="street number">Street number:</label>
+              <div class="line-container">
+                <label for="street number">Street number:</label>
+                <span class="dot validation-dot street-number-error"></span>
+              </div>
               <input
                 type="text"
                 name="Street number"
                 id="street-number"
-                placeholder="#"
+                placeholder="Min. 1 digit"
               />
-              <label for="city-name">City name:</label>
+              <div class="line-container">
+                <label for="city-name">City name:</label>
+                <span class="dot validation-dot city-name-error"></span>
+              </div>
               <input
                 type="text"
                 name="City name"
                 id="city-name"
-                placeholder="City name"
+                placeholder="Min. 2 characters"
               />
-              <label for="zip-code">Zip code:</label>
+              <div class="line-container">
+                <label for="zip-code">Zip code:</label>
+                <span class="dot validation-dot zip-code-error"></span>
+              </div>
               <input
                 type="text"
                 name="Zip code"
                 id="zip-code"
-                placeholder="Zip code"
+                placeholder="Min. 4 digits"
               />
-              <label for="tel">Phone number:</label>
+              <div class="line-container">
+                <label for="tel">Phone number:</label>
+                <span class="dot validation-dot tel-number-error"></span>
+              </div>
               <input
                 type="tel"
                 name="tel"
                 id="tel"
-                placeholder="Your telephone number"
+                placeholder="Min. 8 digits"
               />
-              <label for="e-mail">E-mail:</label>
+              <div class="line-container">
+                <label for="e-mail">E-mail:</label>
+                <span class="dot validation-dot e-mail-error"></span>
+              </div>
               <input
                 type="email"
                 name="E-mail"
                 id="e-mail"
-                placeholder="Your e-mail address"
+                placeholder="For ex. you@gmail.com"
               />
             </div>
             <div class="cart-delivery">
               <h2>Delivery information</h2>
-              <label>Delivery company:</label>
+              <div class="line-container delivery-container">
+                <label>Delivery co.</label>
+                <span class="dot validation-dot delivery-error"></span>
+              </div>
               <select name="delivery" id="delivery">
+                <option value="">Choose one</option>
                 <option value="postnord">PostNord</option>
                 <option value="Posten">Posten</option>
                 <option value="DHL">DHL</option>
               </select>
-              <label for="delivery-date">Delivery date:</label>
-              <input type="date" id="delivery-date" name="delivery-date" />
             </div>
             <div class="cart-payment">
               <h2>Payment information</h2>
-              <label for="card-name">Name on card:</label>
+              <div class="line-container">
+                <label for="card-name">Name on card:</label>
+                <span class="dot validation-dot card-name-error"></span>
+              </div>
               <input
                 type="text"
                 name="Card name"
                 id="card-name"
-                placeholder="Full name"
+                placeholder="Min. 3 characters"
               />
-              <label for="card-number">Card number:</label>
+              <div class="line-container">
+                <label for="card-number">Card number:</label>
+                <span class="dot validation-dot card-number-error"></span>
+              </div>
               <input
                 type="text"
                 name="Card number"
                 id="card-number"
-                placeholder="Card number"
+                placeholder="12 digits"
               />
-              <label for="cvc">CVC number:</label>
-              <input type="text" name="cvc" id="cvc" placeholder="CVC number" />
-              <label for="expiry-date">Card's expiry date:</label>
-              <input type="date" name="Expiray date" id="expiray-date" />
+              <div class="line-container">
+                <label for="cvc">CVC number:</label>
+                <span class="dot validation-dot cvc-number-error"></span>
+              </div>
+              <input type="text" name="cvc" id="cvc" placeholder="3 digits" />
+              <div class="line-container expiry-date-container">
+                <label for="expiry-date">Card's expiry date:</label>
+                <span class="dot validation-dot expiry-date-error"></span>
+              </div>
+              <input type="date" name="Expiry date" id="expiry-date" />
+            </div>
+            <div class="order-failure">
+              One or more fields are filled in incorrectly
             </div>
             <div class="cart-place-order">
-              <input type="submit" class="order-cta-button" value="Confirm" />
+              <button type="submit" class="order-cta-button">
+                Place your order
+              </button>
             </div>
             <div class="cart-payment"></div>
           </form>
@@ -223,6 +253,7 @@
               <p class="cart-summary-line-column-right">600kr</p>
             </div>
           </div>
+          <div class="order-success">Test</div>
         </div>
       </section>
     </main>
@@ -230,5 +261,6 @@
       <img src="images/brand-logo.png" alt="Brand logo" />
       <p>Copyright &copy; 2022</p>
     </footer>
+    <script src="./js/cart.js" type="module"></script>
   </body>
 </html>

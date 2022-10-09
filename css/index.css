@@ -1,10 +1,12 @@
 .hero-section {
   background-image: url("../images/hero-bg.jpg");
+  background-attachment: fixed;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
+  margin-top: 61px;
 }
 
 .hero-section-text {
@@ -39,6 +41,11 @@ h1 span {
   text-align: center;
 }
 
+.hero-section-text a:hover {
+  border: 2px black solid;
+  margin: 3px;
+}
+
 /* Featured products */
 
 .featured-products {
@@ -52,9 +59,9 @@ h1 span {
 .featured-products h2 {
   width: 100%;
   text-align: center;
-  margin: 50px auto 20px auto;
+  margin: 50px auto 35px auto;
   text-transform: uppercase;
-  text-decoration: underline;
+  font-size: 2rem;
 }
 
 .product-box-left {
@@ -85,7 +92,8 @@ h1 span {
   display: flex;
 }
 
-.featured-product-card-img img {
+.featured-product-card-img img,
+.featured-product-card-img a {
   max-height: 100%;
   max-width: 250px;
   margin: auto;
@@ -119,10 +127,11 @@ h1 span {
 
 .company-information h2 {
   margin-top: 75px;
+  margin-bottom: 35px;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .company-information-left {

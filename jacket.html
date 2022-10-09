@@ -10,18 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1eb31d1de3.js" crossorigin="anonymous"></script>
-    
-<!-- Hotjar Tracking Code for https://dreamy-sammet-d62ddc.netlify.app/ -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3162222,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+
 
     <title>Rainydays - The Rainydays' Classic rain jacket</title>
   </head>
@@ -33,17 +24,19 @@
         </div>
         <div class="nav-left">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="mens.html">Men's</a></li>
-            <li><a href="womens.html" class="current">Women's</a></li>
-            <li class="nav-divider"> | </li>
-            <li><input type="text" placeholder="Search" id="search"></li>
+            <li><a href="womens.html">Women's</a></li>
           </ul>
         </div>
         <div class="nav-right">
           <ul>
+            
+            
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="nav-divider"> | </li>
+            <li><input type="text" placeholder="Search" id="search"></li>
           </ul>
         </div>
         <div class="nav-icons">
@@ -64,6 +57,7 @@
       </nav>
     </header>
     <main class="jacket-main">
+      <a href onclick="javascript:history.back()" class="back-button">&#x2190; back</a>
         <h1>Rainydays Classic</h1>
         <section class="jacket-main-container">
             <section class="jacket-left">
@@ -81,7 +75,7 @@
                     <p>This jacket is awesome, and lorem ipsum, dorothea matilde dumbledore.</p>
                     <strong>Price: 500kr</strong>
                 </div>
-                <form action="submit.php" method="GET" class="jacket-choices">
+                <form class="jacket-choices">
                     <label>Jacket color:</label>
                     <select name="colors" id="colors">
                         <option value="yellow">Yellow</option>
@@ -95,8 +89,15 @@
                         <option value="Large">Large</option>
                     </select>
                     <label for="quantity">Quantity:</label>
-                    <input type="number" name="quantity" id="quantity">
-                    <input type="submit" class="add-cta-button" value="Add">
+                    <select name="quantity" id="quantity">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    <button type="submit" class="add-cta-button">Add to cart</button>
                 </form>
 
                 </div>
