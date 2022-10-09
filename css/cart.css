@@ -146,10 +146,37 @@
 }
 
 .order-success {
-  margin-top: 40px;
+  margin-top: 15px;
   display: flex;
-  width: 300px;
   display: none;
+  flex-direction: column;
+  width: 300px;
+}
+
+.make-password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.make-password-button-container {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.make-password-error {
+  visibility: hidden;
+  color: red;
+}
+
+.make-password-button {
+  text-align: right;
+  padding: 10px;
+}
+
+.signed-up-container {
+  display: none;
+  margin-top: 150px;
 }
 
 .order-cta-button {

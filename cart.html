@@ -198,7 +198,7 @@
               <input type="date" name="Expiry date" id="expiry-date" />
             </div>
             <div class="order-failure">
-              One or more fields are filled in incorrectly
+              Some field are filled in incorrectly
             </div>
             <div class="cart-place-order">
               <button type="submit" class="order-cta-button">
@@ -253,7 +253,45 @@
               <p class="cart-summary-line-column-right">600kr</p>
             </div>
           </div>
-          <div class="order-success">Test</div>
+          <div class="order-success">
+            <h2>Thank you for ordering!</h2>
+            <p>
+              If you make a password, we will be happy to store your
+              information, making it easier to order next time.
+            </p>
+            <form class="make-password-container" novalidate>
+              <div class="make-password">
+                <label for="password">Password: </label>
+
+                <input
+                  type="text"
+                  name="Make password"
+                  id="make-password"
+                  placeholder="Min. 8 characters"
+                />
+              </div>
+              <div class="make-password">
+                <label for="password">Confirm password: </label>
+                <input
+                  type="text"
+                  name="Confirm password"
+                  id="confirm-password"
+                  placeholder="Min. 8 characters"
+                />
+              </div>
+              <div class="make-password-error">
+                Passwords must match and be minimum 8 characters.
+              </div>
+              <div class="make-password-button-container">
+                <button type="submit" class="make-password-button">
+                  Sign up
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="signed-up-container">
+            <h2>Thank you for signing up!</h2>
+          </div>
         </div>
       </section>
     </main>

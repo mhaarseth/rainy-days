@@ -215,12 +215,37 @@ function placeOrder(event) {
     checkLength(cvcNumber.value, 2) &&
     checkLength(expiryDate.value, 9)
   ) {
-    console.log("All is well");
     orderSuccess.style.display = "block";
   } else {
     orderFailure.style.visibility = "visible";
-    console.log("Something is amiss");
   }
 }
 
 orderForm.addEventListener("submit", placeOrder);
+
+const signUpForm = document.querySelector(".make-password-container");
+const makePassword = document.getElementById("make-password");
+const confirmPassword = document.getElementById("confirm-password");
+
+const makePasswordError = document.querySelector(".make-password-error");
+const signedUp = document.querySelector(".signed-up-container");
+const signUpContainer = document.querySelector(".order-success");
+
+function signUp(event) {
+  event.preventDefault();
+  if (checkLength(makePassword.value, 7)) {
+    makePasswordError.style.visibility = "hidden";
+  } else {
+    makePasswordError.style.visibility = "visible";
+  }
+
+  if (confirmPassword.value === makePassword.value) {
+    signedUp.style.display = "block";
+    signUpContainer.style.display = "none";
+  } else {
+    signedUp.style.display = "none";
+    makePasswordError.style.visibility = "visible";
+  }
+}
+
+signUpForm.addEventListener("submit", signUp);
