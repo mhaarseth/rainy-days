@@ -36,9 +36,9 @@ function formValidation(event) {
   }
 
   if (checkLength(message.value, 16)) {
-    messageError.style.visibility = "hidden";
+    messageError.style.display = "none";
   } else {
-    messageError.style.visibility = "visible";
+    messageError.style.display = "block";
   }
 
   if (

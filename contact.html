@@ -89,7 +89,7 @@
             placeholder="Your e-mail address"
           />
           <div class="subject-input">
-            <label>Subject of your inquiry:</label>
+            <label for="inquiry">Subject of your inquiry:</label>
             <span class="subject-option-error">Please choose a subject</span>
           </div>
           <select name="inquiry" id="inquiry">
@@ -101,8 +101,11 @@
           </select>
         </div>
         <div class="contact-bottom">
-          <div class="message-error">
-            Your message must be at least 16 characters
+          <div class="message-label-container">
+            <label for="message">Your message:</label>
+            <span class="message-error"
+              >Your message must be at least 16 characters</span
+            >
           </div>
           <textarea
             id="message"
