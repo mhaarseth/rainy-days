@@ -3,6 +3,10 @@
   margin: 81px auto 0 auto;
 }
 
+.jacket-heading {
+  font-size: 2rem;
+}
+
 .jacket-main h1 {
   text-align: center;
 }
@@ -10,9 +14,14 @@
 .jacket-main-container {
   max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+}
+
+.jacket-information-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .jacket-left {

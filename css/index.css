@@ -48,20 +48,18 @@ h1 span {
 
 /* Featured products */
 
+.featured-products-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .featured-products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
-}
-
-.featured-products h2 {
-  width: 100%;
-  text-align: center;
-  margin: 50px auto 35px auto;
-  text-transform: uppercase;
-  font-size: 2rem;
 }
 
 .product-box-left {
@@ -114,6 +112,9 @@ h1 span {
 
 .featured-product-card-copy h3 {
   margin-top: 15px;
+}
+.colored-dots {
+  visibility: hidden;
 }
 
 /* Company information */
