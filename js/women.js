@@ -16,9 +16,6 @@ async function getWomensJackets() {
         if (products[i].categories[t].name.toLowerCase() !== "womens") {
           continue;
         }
-        if (t === 4) {
-          break;
-        }
 
         womensJackets.innerHTML += `
 <div class="product-jacket">

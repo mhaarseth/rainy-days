@@ -8,17 +8,17 @@ async function getFeaturedProducts() {
 
     for (let i = 0; i < products.length; i++) {
       for (let t = 0; t < products[i].categories.length; t++) {
-        const productImage = products[i].images[0].src;
-        const productName = products[i].name;
-        const productPrice = products[i].prices.price;
-        const productId = products[i].id;
-
         if (products[i].categories[t].name.toLowerCase() !== "featured") {
           continue;
         }
         if (t === 4) {
           break;
         }
+
+        const productImage = products[i].images[0].src;
+        const productName = products[i].name;
+        const productPrice = products[i].prices.price;
+        const productId = products[i].id;
 
         featuredProducts.innerHTML += `
         <div class="featured-product">

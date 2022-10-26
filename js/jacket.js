@@ -10,7 +10,6 @@ async function getJacket() {
   try {
     const response = await fetch(url);
     const jacket = await response.json();
-    console.log(jacket);
 
     const productName = jacket.name;
     const jacketImage = jacket.images[0].src;

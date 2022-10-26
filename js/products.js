@@ -1,7 +1,14 @@
-const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products";
-const mensJackets = document.querySelector(".jackets-container");
+import { setProductsHeading } from "./components/setProductsHeading.js";
+import { setCurrent } from "./components/setCurrent.js";
 
-async function getMensJackets() {
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const category = params.get("category");
+
+const url = "https://mhaarseth.no/flower-power/wp-json/wc/store/products";
+const productsContainer = document.querySelector(".jackets-container");
+
+async function getProducts() {
   try {
     const response = await fetch(url);
     const products = await response.json();
@@ -13,12 +20,12 @@ async function getMensJackets() {
         const productPrice = products[i].prices.price;
         const productId = products[i].id;
 
-        if (products[i].categories[t].name.toLowerCase() !== "mens") {
+        if (products[i].categories[t].name.toLowerCase() !== category) {
           continue;
         }
 
-        mensJackets.innerHTML += `
-<div class="product-jacket">
+        productsContainer.innerHTML += `
+        <div class="product-jacket">
           <div class="jackets-card-img">
             <img src="${productImage}" alt="" />
           </div>
@@ -41,4 +48,6 @@ async function getMensJackets() {
     console.log(error);
   }
 }
-getMensJackets();
+getProducts();
+setProductsHeading(category);
+setCurrent(category);

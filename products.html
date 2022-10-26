@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Rainydays - Men's rain jackets</title>
+    <title>Rainydays - Rainjackets</title>
   </head>
   <body>
     <header>
@@ -32,8 +32,14 @@
         <div class="nav-left">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="mens.html" class="current">Men's</a></li>
-            <li><a href="womens.html">Women's</a></li>
+            <li>
+              <a href="products.html?category=mens" class="mens-nav">Men's</a>
+            </li>
+            <li>
+              <a href="products.html?category=womens" class="womens-nav"
+                >Women's</a
+              >
+            </li>
           </ul>
         </div>
         <div class="nav-right">
@@ -67,7 +73,7 @@
       <a href onclick="javascript:history.back()" class="back-button"
         >&#x2190; back</a
       >
-      <h1>Men's's rainjackets</h1>
+      <h1 class="products-heading">Men's Jackets</h1>
 
       <div class="jackets-container"></div>
     </main>
@@ -75,6 +81,6 @@
       <img src="images/brand-logo.png" alt="Brand logo" />
       <p>Copyright &copy; 2022</p>
     </footer>
-    <script src="./js/men.js" type="module"></script>
+    <script src="./js/products.js" type="module"></script>
   </body>
 </html>
