@@ -4,7 +4,7 @@ export async function generateCart() {
       continue;
     }
     const productDetails =
-      "http://mhaarseth.no/flower-power/wp-json/wc/store/products/" +
+      "https://mhaarseth.no/flower-power/wp-json/wc/store/products/" +
       window.localStorage.key(i);
 
     const cart = document.querySelector(".cart-products-info-grid");
