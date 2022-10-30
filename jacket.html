@@ -29,8 +29,14 @@
         <div class="nav-left">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="mens.html">Men's</a></li>
-            <li><a href="womens.html">Women's</a></li>
+            <li>
+              <a href="products.html?category=mens" class="mens-nav">Men's</a>
+            </li>
+            <li>
+              <a href="products.html?category=womens" class="womens-nav"
+                >Women's</a
+              >
+            </li>
           </ul>
         </div>
         <div class="nav-right">
@@ -50,8 +56,8 @@
           <input type="checkbox" id="hamburger-menu" />
           <nav>
             <ul>
-              <li><a href="mens.html">Men's</a></li>
-              <li><a href="womens.html">Women's</a></li>
+              <li><a href="products.html?category=mens">Men's</a></li>
+              <li><a href="products.html?category=womens">Women's</a></li>
               <li><a href="#">Search</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -65,6 +71,15 @@
         >&#x2190; back</a
       >
       <section class="jacket-main-container"></section>
+      <form class="jacket-choices">
+        <label>Jacket size:</label>
+        <select name="sizes" id="sizes">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <button class="add-cta-button">Add to cart</button>
+      </form>
     </main>
     <footer>
       <img src="images/brand-logo.png" alt="Brand logo" />

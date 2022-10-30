@@ -9,6 +9,7 @@
 
 .cart {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 100px;
 }
@@ -78,6 +79,11 @@
   margin: 0 auto;
 }
 
+.product-details {
+  display: flex;
+  flex-direction: row;
+}
+
 .cart-products-info {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +99,7 @@
 .cart-products-info-grid {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
 }
 

@@ -1,5 +1,5 @@
 import { setProductsHeading } from "./components/setProductsHeading.js";
-import { setCurrent } from "./components/setCurrent.js";
+import { setCategoryUnderline } from "./components/setCategoryUnderline.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -50,4 +50,4 @@ async function getProducts() {
 }
 getProducts();
 setProductsHeading(category);
-setCurrent(category);
+setCategoryUnderline(category);

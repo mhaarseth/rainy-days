@@ -34,24 +34,7 @@ async function getJacket() {
             </p>
             <strong>Price: ${jacketPrice}kr</strong>
           </div>
-          <form class="jacket-choices">
-            <label>Jacket size:</label>
-            <select name="sizes" id="sizes">
-              <option value="Small">Small</option>
-              <option value="Medium">Medium</option>
-              <option value="Large">Large</option>
-            </select>
-            <label for="quantity">Quantity:</label>
-            <select name="quantity" id="quantity">
-              <option value=""></option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <button type="submit" class="add-cta-button">Add to cart</button>
-          </form>
+
         </section>
         </div>
 `;
@@ -61,3 +44,17 @@ async function getJacket() {
 }
 
 getJacket();
+
+const addItemButton = document.querySelector(".add-cta-button");
+const jacketSize = document.getElementById("sizes");
+const sizeChoice = jacketSize.value + id;
+console.log(sizeChoice);
+console.log(jacketSize.value);
+console.log(addItemButton);
+
+addItemButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  window.localStorage.setItem(id, id);
+  window.localStorage.setItem(sizeChoice, sizes.value);
+});
