@@ -117,6 +117,17 @@
   margin: 0 auto;
 }
 
+.empty-cart {
+  text-decoration: underline;
+  font-weight: normal !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.empty-cart:hover {
+  cursor: pointer;
+}
+
 .cart-summary-line {
   width: 195px;
   display: grid;

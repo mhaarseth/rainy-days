@@ -1,6 +1,7 @@
 import { checkLength } from "./components/checkLength.js";
 import { validateEmail } from "./components/validateEmail.js";
 import { generateCart } from "./components/generateCart.js";
+import { emptyCart } from "./components/emptyCart.js";
 
 const firstName = document.getElementById("first-name");
 const firstNameError = document.querySelector(".first-name-error");
@@ -252,3 +253,4 @@ function signUp(event) {
 signUpForm.addEventListener("submit", signUp);
 
 generateCart();
+emptyCart();

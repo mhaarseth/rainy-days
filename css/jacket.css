@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .jacket-img-big {
@@ -60,38 +61,44 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .jacket-copy {
   width: 300px;
   width: 100%;
-}
-
-.jacket-choices {
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 300px;
-  margin-top: 30px;
+  margin: 0 auto;
 }
 
 .form-container {
-  max-width: 1200px;
-  justify-content: center;
-  align-items: space-between;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 10px auto 0 auto;
+}
+
+.form-neighbour {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.size-container {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  width: 300px;
 }
 
 .jacket-choices {
-  display: flex;
   width: 300px;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 #quantity {
   width: 35px;
-}
-
-.jacket-choices > * {
-  margin: 10px 0 0 0;
 }
 
 .jacket-choices select {
@@ -102,5 +109,4 @@
 .add-cta-button {
   width: 100px;
   height: 40px;
-  margin-top: 30px;
 }

@@ -32,7 +32,7 @@ async function getJacket() {
             <p>
             ${jacketDescription}
             </p>
-            <strong>Price: ${jacketPrice}kr</strong>
+            <strong>${jacketPrice} kr</strong>
           </div>
           
         </section>
