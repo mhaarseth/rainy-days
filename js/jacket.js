@@ -56,5 +56,4 @@ addItemButton.addEventListener("click", function (event) {
   event.preventDefault();
 
   window.localStorage.setItem(id, id);
-  window.localStorage.setItem(sizeChoice, sizes.value);
 });
