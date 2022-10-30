@@ -172,8 +172,8 @@ input[type="submit"] {
 }
 
 .dot {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -192,6 +192,13 @@ input[type="submit"] {
 
 .green-dot {
   background-color: green;
+}
+
+.notification-dot {
+  visibility: visible;
+  position: relative;
+  right: 15px;
+  bottom: 10px;
 }
 
 /* Footer */

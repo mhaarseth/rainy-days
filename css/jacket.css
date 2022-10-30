@@ -5,6 +5,7 @@
 
 .jacket-heading {
   font-size: 2rem;
+  margin: 0 auto;
 }
 
 .jacket-main h1 {
@@ -14,6 +15,7 @@
 .jacket-main-container {
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
@@ -22,6 +24,7 @@
 .jacket-information-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .jacket-left {
@@ -39,6 +42,7 @@
 
 .jacket-img-big img {
   max-width: 300px;
+  margin: 0 auto;
 }
 
 .jacket-img-small {
@@ -66,6 +70,18 @@
 .jacket-choices {
   display: grid;
   grid-template-columns: auto auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.form-container {
+  max-width: 1200px;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.jacket-choices {
+  display: flex;
   width: 300px;
   margin-top: 30px;
 }

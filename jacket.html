@@ -50,6 +50,7 @@
         <div class="nav-icons">
           <a href="#"><i class="fa-solid fa-user"></i></a>
           <a href="Cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          <div class="dot notification-dot green-dot"></div>
           <label for="hamburger-menu" class="navburger"
             ><i class="fa-solid fa-bars"></i
           ></label>
@@ -71,20 +72,25 @@
         >&#x2190; back</a
       >
       <section class="jacket-main-container"></section>
-      <form class="jacket-choices">
-        <label>Jacket size:</label>
-        <select name="sizes" id="sizes">
-          <option value="Small">Small</option>
-          <option value="Medium">Medium</option>
-          <option value="Large">Large</option>
-        </select>
-        <button class="add-cta-button">Add to cart</button>
-      </form>
+      <div class="form-container">
+        <form class="jacket-choices">
+          <div class="size-container">
+            <label>Jacket size</label>
+            <select name="sizes" id="sizes">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+            </select>
+          </div>
+          <button class="add-cta-button">Add to cart</button>
+        </form>
+      </div>
     </main>
     <footer>
       <img src="images/brand-logo.png" alt="Brand logo" />
       <p>Copyright &copy; 2022</p>
     </footer>
     <script src="./js/jacket.js" type="module"></script>
+    <script src="./js/components/notificationDot.js"></script>
   </body>
 </html>

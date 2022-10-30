@@ -34,9 +34,9 @@ async function getJacket() {
             </p>
             <strong>Price: ${jacketPrice}kr</strong>
           </div>
-
+          
         </section>
-        </div>
+    </div>
 `;
   } catch (error) {
     console.log(error);
@@ -47,13 +47,10 @@ getJacket();
 
 const addItemButton = document.querySelector(".add-cta-button");
 const jacketSize = document.getElementById("sizes");
-const sizeChoice = jacketSize.value + id;
-console.log(sizeChoice);
-console.log(jacketSize.value);
-console.log(addItemButton);
 
 addItemButton.addEventListener("click", function (event) {
   event.preventDefault();
 
+  window.location.reload();
   window.localStorage.setItem(id, id);
 });

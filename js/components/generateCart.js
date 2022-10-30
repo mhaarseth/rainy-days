@@ -9,8 +9,6 @@ export async function generateCart() {
 
     const cart = document.querySelector(".cart-products-info-grid");
 
-    console.log(window.localStorage.key(i));
-
     try {
       const response = await fetch(productDetails);
       const productDetail = await response.json();
@@ -19,7 +17,6 @@ export async function generateCart() {
       const productImage = productDetail.images[0].src;
       const productImageAltText = productDetail.images[0].alt;
       const productPrice = productDetail.prices.price;
-      const size = window.localStorage.getItem("size");
 
       cart.innerHTML += `
       <div class="product-details">
@@ -35,7 +32,7 @@ export async function generateCart() {
           </div>
           <div class="cart-summary-line">
             <p>Size:</p>
-            <p class="cart-summary-line-column-right">${size}</p>
+            <p class="cart-summary-line-column-right">NA</p>
           </div>
           <div class="cart-summary-line">
             <p>Quantity:</p>
